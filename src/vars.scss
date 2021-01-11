@@ -1,0 +1,35 @@
+$tileMinHeight: 200px;
+$tileMaxWidth: 1600px;
+$tileWidth: 85vw;
+
+$priceColor: #c82d2d;
+
+@mixin product--centerChildren {
+    position: relative;
+
+    p, div, ul {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+    }
+}
+
+.product--price {
+    color: $priceColor;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.product__top{
+    height: 80%;
+    @include product--centerChildren;
+}
+
+
+.product__rate.product__section,
+.product__instalment.product__section {
+    text-align: right;
+}

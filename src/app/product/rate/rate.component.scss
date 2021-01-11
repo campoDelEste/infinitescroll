@@ -1,0 +1,21 @@
+@import "../../../vars.scss";
+.product__button {
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0271c2;
+    color: #fff;
+    height: 40px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.26);
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    white-space: nowrap;
+    padding: 0 14px;
+    width: 100%;
+
+    &:hover {
+        background-color: #005ea8;
+    }
+}

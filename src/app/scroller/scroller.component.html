@@ -1,0 +1,11 @@
+<div #scrollContainer class="scroll-container">
+    <div *ngFor="let item of items; let i = index" class="product__item">
+        <app-product [product]="item"></app-product>
+    </div>
+    <div #triggerElement id="triggerElement" *ngIf="!showEndMessage">
+        <mat-spinner class='spinner' *ngIf="loading"></mat-spinner>
+    </div>
+    <div *ngIf="showEndMessage" class="product__item">
+        Sie haben das Ende der Angebot erreicht - nicht das Richtige dabei? Rufen Sie Yusuf an!
+    </div>
+</div>

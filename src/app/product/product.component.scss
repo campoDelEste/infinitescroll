@@ -1,0 +1,48 @@
+@import "../../vars.scss";
+
+.product__one {
+    grid-area: "one";
+    margin-left: 15px;
+}
+
+.product__two {
+    grid-area: "two";
+}
+
+.product__three {
+    grid-area: "three";
+}
+
+.product__four {
+    grid-area: "four";
+    border-width: 0 0 0 0 !important;
+}
+
+.product__tile {
+    width: 100%;
+    min-height: $tileMinHeight;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-rows: 1;
+    grid-row: 1;
+    grid-template-areas: "one two three four";
+
+    border: lightgray;
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+.product__division {
+    border: lightgray;
+    border-width: 0 0.5px 0 0;
+    border-style: solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: calc(100%-20px);
+    padding-right: 15px;
+    min-width: calc(100%-15px);
+}

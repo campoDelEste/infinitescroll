@@ -1,0 +1,22 @@
+@import "../../vars.scss";
+
+.scroll-container {
+    overflow-y: scroll;
+    max-height: 75vh;
+}
+
+.product__item {
+    width: $tileWidth;
+    max-width: $tileMaxWidth;
+    min-height: $tileMinHeight;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+#triggerElement {
+    min-height: 25px;
+}
+
+.spinner {
+    margin: auto;
+}
